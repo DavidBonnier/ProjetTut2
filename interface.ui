@@ -1,24 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>Interface</class>
- <widget class="QMainWindow" name="Interface" >
-  <property name="geometry" >
+ <widget class="QMainWindow" name="Interface">
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>741</width>
+    <height>592</height>
    </rect>
   </property>
-  <property name="windowTitle" >
-   <string>Interface</string>
+  <property name="windowTitle">
+   <string>Logiciel de Mathematique</string>
   </property>
-  <widget class="QMenuBar" name="menuBar" />
-  <widget class="QToolBar" name="mainToolBar" />
-  <widget class="QWidget" name="centralWidget" />
-  <widget class="QStatusBar" name="statusBar" />
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>3</number>
+    </property>
+    <property name="leftMargin">
+     <number>5</number>
+    </property>
+    <property name="topMargin">
+     <number>5</number>
+    </property>
+    <property name="rightMargin">
+     <number>5</number>
+    </property>
+    <property name="bottomMargin">
+     <number>5</number>
+    </property>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <property name="movable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="tabCahierCours">
+       <attribute name="title">
+        <string>Cahier de cours</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="sizeConstraint">
+         <enum>QLayout::SetMaximumSize</enum>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QTextEdit" name="textEdit"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabCahierEvaluation">
+       <property name="toolTipDuration">
+        <number>-7</number>
+       </property>
+       <attribute name="title">
+        <string>Cahier d'évaluation</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="sizeConstraint">
+         <enum>QLayout::SetMaximumSize</enum>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QTextEdit" name="textEdit_2"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabCahierExo">
+       <attribute name="title">
+        <string>Cahier d'exercice</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="sizeConstraint">
+         <enum>QLayout::SetMaximumSize</enum>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QTextEdit" name="textEdit_3"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tabWidget_2">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="movable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="tabGeometrie">
+       <attribute name="title">
+        <string>Géometrie</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="sizeConstraint">
+         <enum>QLayout::SetMaximumSize</enum>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QGraphicsView" name="graphicsView"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>741</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="actionNouveau"/>
+    <addaction name="actionOuvrir"/>
+    <addaction name="actionFermer"/>
+    <addaction name="separator"/>
+    <addaction name="actionConnection"/>
+    <addaction name="actionModifierUtilisateur"/>
+    <addaction name="actionAjouterUtilisateur"/>
+    <addaction name="actionSupprimerUtilisateur"/>
+    <addaction name="separator"/>
+    <addaction name="actionSauvegarder"/>
+    <addaction name="actionSauvegarderSous"/>
+    <addaction name="separator"/>
+    <addaction name="actionImprimer"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <widget class="QMenu" name="menuEdition">
+    <property name="title">
+     <string>Edition</string>
+    </property>
+    <addaction name="actionCouper"/>
+    <addaction name="actionCopier"/>
+    <addaction name="actionColler"/>
+    <addaction name="separator"/>
+    <addaction name="actionDroiteVersGauche"/>
+    <addaction name="separator"/>
+    <addaction name="actionTaillePolice"/>
+    <addaction name="actionCouleurPolice"/>
+   </widget>
+   <widget class="QMenu" name="menuOption">
+    <property name="title">
+     <string>Option</string>
+    </property>
+    <addaction name="actionGriller"/>
+    <addaction name="separator"/>
+    <addaction name="actionCrayon"/>
+    <addaction name="actionRegle"/>
+    <addaction name="actionEquerre"/>
+    <addaction name="separator"/>
+    <addaction name="actionPleineEcranDroite"/>
+    <addaction name="actionPleineEcranGauche"/>
+    <addaction name="actionEcranNormal"/>
+    <addaction name="separator"/>
+    <addaction name="actionParametre"/>
+   </widget>
+   <widget class="QMenu" name="menuAide">
+    <property name="title">
+     <string>Aide</string>
+    </property>
+    <addaction name="actionRaccourcisClavier"/>
+    <addaction name="actionDocumentationUtilisateur"/>
+    <addaction name="separator"/>
+    <addaction name="action_propos"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menuEdition"/>
+   <addaction name="menuOption"/>
+   <addaction name="menuAide"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionSauvegarder"/>
+   <addaction name="actionConnection"/>
+   <addaction name="actionImprimer"/>
+   <addaction name="separator"/>
+   <addaction name="actionTaillePolice"/>
+   <addaction name="actionCouleurPolice"/>
+   <addaction name="separator"/>
+   <addaction name="actionCrayon"/>
+   <addaction name="actionRegle"/>
+   <addaction name="actionEquerre"/>
+   <addaction name="separator"/>
+   <addaction name="actionDroiteVersGauche"/>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+   <addaction name="actionPleineEcranGauche"/>
+   <addaction name="actionPleineEcranDroite"/>
+   <addaction name="actionEcranNormal"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="sizeGripEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <action name="actionNouveau">
+   <property name="icon">
+    <iconset resource="interface.qrc">
+     <normaloff>:/Resources/Image/ui/new_file.png</normaloff>:/Resources/Image/ui/new_file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Nouveau</string>
+   </property>
+  </action>
+  <action name="actionOuvrir">
+   <property name="icon">
+    <iconset resource="interface.qrc">
+     <normaloff>:/Resources/Image/ui/ouvrir.png</normaloff>:/Resources/Image/ui/ouvrir.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ouvrir</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionFermer">
+   <property name="icon">
+    <iconset resource="interface.qrc">
+     <normaloff>:/Resources/Image/ui/close_file.png</normaloff>:/Resources/Image/ui/close_file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Fermer</string>
+   </property>
+  </action>
+  <action name="actionConnection">
+   <property name="icon">
+    <iconset resource="interface.qrc">
+     <normaloff>:/Resources/Image/ui/login.png</normaloff>:/Resources/Image/ui/login.png</iconset>
+   </property>
+   <property name="text">
+    <string>Connection</string>
+   </property>
+  </action>
+  <action name="actionModifierUtilisateur">
+   <property name="icon">
+    <iconset resource="interface.qrc">
+     <normaloff>:/Resources/Image/ui/modif_uti.png</normaloff>:/Resources/Image/ui/modif_uti.png</iconset>
+   </property>
+   <property name="text">
+    <string>Modifier utilisateur</string>
+   </property>
+  </action>
+  <action name="actionAjouterUtilisateur">
+   <property name="icon">
+    <iconset resource="interface.qrc">
+     <normaloff>:/Resources/Image/ui/ajouterUti.png</normaloff>:/Resources/Image/ui/ajouterUti.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ajouter un utilisateur</string>
+   </property>
+  </action>
+  <action name="actionSupprimerUtilisateur">
+   <property name="icon">
+    <iconset resource="interface.qrc">
+     <normaloff>:/Resources/Image/ui/supprUti.png</normaloff>:/Resources/Image/ui/supprUti.png</iconset>
+   </property>
+   <property name="text">
+    <string>Supprimer un utilisateur</string>
+   </property>
+  </action>
+  <action name="actionSauvegarder">
+   <property name="icon">
+    <iconset resource="interface.qrc">
+     <normaloff>:/Resources/Image/ui/sauver.png</normaloff>:/Resources/Image/ui/sauver.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sauvegarder</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionSauvegarderSous">
+   <property name="icon">
+    <iconset resource="interface.qrc">
+     <normaloff>:/Resources/Image/ui/sauver_sous.png</normaloff>:/Resources/Image/ui/sauver_sous.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sauvegarder-Sous</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="icon">
+    <iconset resource="interface.qrc">
+     <normaloff>:/Resources/Image/ui/quitter.png</normaloff>:/Resources/Image/ui/quitter.png</iconset>
+   </property>
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionCopier">
+   <property name="icon">
+    <iconset resource="interface.qrc">
+     <normaloff>:/Resources/Image/ui/copier.png</normaloff>:/Resources/Image/ui/copier.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copier</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionColler">
+   <property name="icon">
+    <iconset resource="interface.qrc">
+     <normaloff>:/Resources/Image/ui/coller.png</normaloff>:/Resources/Image/ui/coller.png</iconset>
+   </property>
+   <property name="text">
+    <string>Coller</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionCouper">
+   <property name="icon">
+    <iconset resource="interface.qrc">
+     <normaloff>:/Resources/Image/ui/couper.png</normaloff>:/Resources/Image/ui/couper.png</iconset>
+   </property>
+   <property name="text">
+    <string>Couper</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionGriller">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Grille</string>
+   </property>
+  </action>
+  <action name="actionRaccourcisClavier">
+   <property name="icon">
+    <iconset resource="interface.qrc">
+     <normaloff>:/Resources/Image/ui/raccourcisClavier.png</normaloff>:/Resources/Image/ui/raccourcisClavier.png</iconset>
+   </property>
+   <property name="text">
+    <string>Raccourcis clavier</string>
+   </property>
+  </action>
+  <action name="actionDocumentationUtilisateur">
+   <property name="text">
+    <string>Documentation utilisateur</string>
+   </property>
+  </action>
+  <action name="action_propos">
+   <property name="text">
+    <string>À propos</string>
+   </property>
+  </action>
+  <action name="actionImprimer">
+   <property name="icon">
+    <iconset resource="interface.qrc">
+     <normaloff>:/Resources/Image/ui/imprimer.png</normaloff>:/Resources/Image/ui/imprimer.png</iconset>
+   </property>
+   <property name="text">
+    <string>Imprimer</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionTaillePolice">
+   <property name="icon">
+    <iconset resource="interface.qrc">
+     <normaloff>:/Resources/Image/ui/fontSize.png</normaloff>:/Resources/Image/ui/fontSize.png</iconset>
+   </property>
+   <property name="text">
+    <string>Taille de Police</string>
+   </property>
+  </action>
+  <action name="actionParametre">
+   <property name="text">
+    <string>Paramètre ...</string>
+   </property>
+  </action>
+  <action name="actionCouleurPolice">
+   <property name="icon">
+    <iconset resource="interface.qrc">
+     <normaloff>:/Resources/Image/ui/fontColor.png</normaloff>:/Resources/Image/ui/fontColor.png</iconset>
+   </property>
+   <property name="text">
+    <string>Couleur de Police</string>
+   </property>
+  </action>
+  <action name="actionCrayon">
+   <property name="icon">
+    <iconset resource="interface.qrc">
+     <normaloff>:/Resources/Image/ui/crayon.gif</normaloff>:/Resources/Image/ui/crayon.gif</iconset>
+   </property>
+   <property name="text">
+    <string>Crayon</string>
+   </property>
+  </action>
+  <action name="actionRegle">
+   <property name="icon">
+    <iconset resource="interface.qrc">
+     <normaloff>:/Resources/Image/ui/regle.gif</normaloff>:/Resources/Image/ui/regle.gif</iconset>
+   </property>
+   <property name="text">
+    <string>Règle</string>
+   </property>
+  </action>
+  <action name="actionEquerre">
+   <property name="icon">
+    <iconset resource="interface.qrc">
+     <normaloff>:/Resources/Image/ui/equerre.gif</normaloff>:/Resources/Image/ui/equerre.gif</iconset>
+   </property>
+   <property name="text">
+    <string>Equerre</string>
+   </property>
+  </action>
+  <action name="actionPleineEcranDroite">
+   <property name="icon">
+    <iconset resource="interface.qrc">
+     <normaloff>:/Resources/Image/ui/FlecheGauche.png</normaloff>:/Resources/Image/ui/FlecheGauche.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pleine Ecran a droite</string>
+   </property>
+  </action>
+  <action name="actionPleineEcranGauche">
+   <property name="icon">
+    <iconset resource="interface.qrc">
+     <normaloff>:/Resources/Image/ui/FlecheDroite.png</normaloff>:/Resources/Image/ui/FlecheDroite.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pleine écran à gauche</string>
+   </property>
+  </action>
+  <action name="actionEcranNormal">
+   <property name="icon">
+    <iconset resource="interface.qrc">
+     <normaloff>:/Resources/Image/ui/arrows_left_right.png</normaloff>:/Resources/Image/ui/arrows_left_right.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ecran normal</string>
+   </property>
+  </action>
+  <action name="actionDroiteVersGauche">
+   <property name="icon">
+    <iconset resource="interface.qrc">
+     <normaloff>:/Resources/Image/ui/moveFichier.png</normaloff>:/Resources/Image/ui/moveFichier.png</iconset>
+   </property>
+   <property name="text">
+    <string>Droite vers la gauche</string>
+   </property>
+  </action>
  </widget>
- <layoutDefault spacing="6" margin="11" />
- <pixmapfunction></pixmapfunction>
- <resources/>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="interface.qrc"/>
+ </resources>
  <connections/>
 </ui>

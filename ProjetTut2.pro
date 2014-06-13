@@ -4,13 +4,15 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT += core gui
+QT += webkitwidgets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = ProjetTut2
 TEMPLATE = app
 
+include(Geometrie/Geometrie.pri)
 
 SOURCES += main.cpp\
         interface.cpp
@@ -18,3 +20,6 @@ SOURCES += main.cpp\
 HEADERS  += interface.h
 
 FORMS    += interface.ui
+
+RESOURCES += \
+    interface.qrc

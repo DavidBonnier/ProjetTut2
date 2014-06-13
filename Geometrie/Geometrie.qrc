@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Resources/Image/arrows_left_right.png</file>
+        <file>Resources/Image/compas.gif</file>
+        <file>Resources/Image/crayon.gif</file>
+        <file>Resources/Image/equerre.gif</file>
+        <file>Resources/Image/fontColor.png</file>
+        <file>Resources/Image/Point.gif</file>
+        <file>Resources/Image/regle.gif</file>
+        <file>Resources/Image/Texte.gif</file>
+    </qresource>
+</RCC>

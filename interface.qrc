@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Resources/Image/ui/ajouterUti.png</file>
+        <file>Resources/Image/ui/close_file.png</file>
+        <file>Resources/Image/ui/coller.png</file>
+        <file>Resources/Image/ui/copier.png</file>
+        <file>Resources/Image/ui/couper.png</file>
+        <file>Resources/Image/ui/crayon.gif</file>
+        <file>Resources/Image/ui/equerre.gif</file>
+        <file>Resources/Image/ui/fontColor.png</file>
+        <file>Resources/Image/ui/fontSize.png</file>
+        <file>Resources/Image/ui/imprimer.png</file>
+        <file>Resources/Image/ui/login.png</file>
+        <file>Resources/Image/ui/modif_uti.png</file>
+        <file>Resources/Image/ui/new_file.png</file>
+        <file>Resources/Image/ui/ouvrir.png</file>
+        <file>Resources/Image/ui/quitter.png</file>
+        <file>Resources/Image/ui/raccourcisClavier.png</file>
+        <file>Resources/Image/ui/regle.gif</file>
+        <file>Resources/Image/ui/sauver.png</file>
+        <file>Resources/Image/ui/sauver_sous.png</file>
+        <file>Resources/Image/ui/supprUti.png</file>
+        <file>Resources/Image/ui/FlecheDroite.png</file>
+        <file>Resources/Image/ui/FlecheGauche.png</file>
+        <file>Resources/Image/ui/arrows_left_right.png</file>
+        <file>Resources/Image/ui/moveFichier.png</file>
+    </qresource>
+</RCC>
