@@ -19,6 +19,7 @@ public:
 
 private:
     Ui::Interface *ui;
+    Geometrie * m_geometrie;
 };
 
 #endif // INTERFACE_H

@@ -3,4 +3,5 @@
 SceneDessin::SceneDessin(QObject *parent) :
     QGraphicsScene(parent)
 {
+    addText("Bonjour");
 }

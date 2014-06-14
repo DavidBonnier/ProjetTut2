@@ -3,6 +3,7 @@
 ViewScene::ViewScene(QWidget *parent) :
     QGraphicsView(parent)
 {
+    centerOn(0,0);
 }
 
 void ViewScene::wheelEvent(QWheelEvent* event)
