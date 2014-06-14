@@ -6,6 +6,11 @@ Interface::Interface(QWidget *parent) :
     ui(new Ui::Interface)
 {
     ui->setupUi(this);
+
+    Geometrie * yolo = new Geometrie();
+    yolo->show();
+
+    ui->graphicsView->setScene(yolo->getScene());
 }
 
 Interface::~Interface()

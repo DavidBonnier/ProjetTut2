@@ -40,7 +40,7 @@
      <number>0</number>
     </property>
     <item>
-     <widget class="QGraphicsView" name="graphicsView"/>
+     <widget class="ViewScene" name="graphicsView"/>
     </item>
     <item>
      <widget class="QScrollArea" name="ScrollAreaOptionsOutils">
@@ -735,6 +735,13 @@
    </property>
   </action>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ViewScene</class>
+   <extends>QGraphicsView</extends>
+   <header>viewscene.h</header>
+  </customwidget>
+ </customwidgets>
  <tabstops>
   <tabstop>SpinBoxCrayonPositionY</tabstop>
   <tabstop>CheckBoxCrayonTransparence</tabstop>

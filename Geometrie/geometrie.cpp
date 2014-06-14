@@ -6,6 +6,10 @@ Geometrie::Geometrie(QWidget *parent) :
     ui(new Ui::Geometrie)
 {
     ui->setupUi(this);
+
+    m_sceneDessin = new SceneDessin();
+
+    ui->graphicsView->setScene(m_sceneDessin);
 }
 
 Geometrie::~Geometrie()

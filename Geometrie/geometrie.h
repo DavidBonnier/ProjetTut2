@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 
+#include "scenedessin.h"
+
 namespace Ui {
 class Geometrie;
 }
@@ -15,8 +17,12 @@ public:
     Geometrie(QWidget *parent = 0);
     ~Geometrie();
 
+    SceneDessin * getScene(){return m_sceneDessin;}
+
 private:
     Ui::Geometrie *ui;
+
+    SceneDessin * m_sceneDessin;
 };
 
 #endif // GEOMETRIE_H
